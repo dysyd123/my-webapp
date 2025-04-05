@@ -82,6 +82,13 @@
         margin: 5px;
       }
     </style>
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#8B4513">
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js');
+  }
+</script>
   </head>
   <body>
     <audio id="beep-sound" src="End-bell.mp3"></audio>
